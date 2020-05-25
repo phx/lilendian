@@ -6,7 +6,11 @@ if len(sys.argv) < 2:
   print('program must be run a memory address argument.')
   sys.exit()
 
-address = sys.argv[1]
+if sys.argv[1] == "-":
+    address = sys.stdin.readlines()[0]
+else:
+    address = sys.argv[1]
+
 if not address[0:2] == '0x':
   address = '0x' + address
 
