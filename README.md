@@ -53,3 +53,5 @@ Copy and paste that guy straight into your payload.
 I might tweak it in the future to take multiple memory addresses, but as of right now, it only outputs a single memory address.
 
 I have kept it short and simple to be easily scriptable, so I'll leave the rest up to you.
+
+I'm definitely going to look into implementing this a `gdb` plugin.
