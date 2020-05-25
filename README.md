@@ -1,3 +1,5 @@
+![lil endian](./lilendian.png?raw=true)
+
 # lil endian
 
 This is a program comptaible with both Python 2 and 3 which simply returns escaped shell code in Little Endian format for whatever memory address you enter.
