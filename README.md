@@ -31,7 +31,7 @@ $ ./lilendian.py 0x00007fffffffd980
 \x80\xd9\xff\xff\xff\x7f\x00\x00
 ```
 
-### Shell script example snippet
+### Shell script example snippet:
 
 Let's say you wanted to get a piece of 64-bit shellcode for `0xdeadbeef + 0xbadcafe + 0xcafebabe + 0xabadbabe`.
 
@@ -48,10 +48,21 @@ Output:
 
 Copy and paste that guy straight into your payload.
 
-### Future
+### Calling from within `gdb`:
+
+For this example, we will assume you have moved `lilendian.py` somewhere in your `$PATH` as `lilendian`:
+
+```
+gdb -q ./vuln
+(gdb) x vuln
+0x4008b2 <vuln>:	0xe5894855
+(gdb) ! lilendian 0x4008b2
+\xb2\x08@\x00
+\xb2\x08@\x00\x00\x00\x00\x00
+```
+
+### Future:
 
 I might tweak it in the future to take multiple memory addresses, but as of right now, it only outputs a single memory address.
 
 I have kept it short and simple to be easily scriptable, so I'll leave the rest up to you.
-
-I'm definitely going to look into implementing this a `gdb` plugin.
