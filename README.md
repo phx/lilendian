@@ -2,7 +2,9 @@
 
 # lil endian
 
-This is a program comptaible with both Python 2 and 3 which simply returns escaped shell code in Little Endian format for whatever memory address you enter.
+This is a program comptaible with both Python 2 and 3.
+
+It simply returns escaped shell code in Little Endian format for whatever memory address is submitted as the first argument.
 
 It's smart enough to distinguish between addresses with an `0x` prefix and accounts for that.
 
