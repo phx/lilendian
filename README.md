@@ -2,7 +2,7 @@
 
 # lil endian
 
-This is a program comptaible with both Python 2 and 3.
+This program is comptaible with both Python 2 and 3.
 
 It simply returns escaped shell code in Little Endian format for whatever memory address is submitted as the first argument.
 
@@ -10,7 +10,7 @@ It's smart enough to distinguish between addresses with an `0x` prefix and accou
 
 If the address is only in the 64-bit range, you will only receive the 64-bit output.
 
-If the address can fit in both ranges, you will receive both 32 and 64-bit output.
+If the address can fit in the x86_64 ranges, you will receive both 32 and 64-bit output.
 
 ## Usage:
 
