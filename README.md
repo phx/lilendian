@@ -53,12 +53,9 @@ Copy and paste that guy straight into your payload.
 For this example, we will assume you have moved `lilendian.py` somewhere in your `$PATH` as `lilendian`:
 
 ```
-gdb -q ./vuln
-(gdb) x vuln
-0x4008b2 <vuln>:	0xe5894855
-(gdb) ! lilendian 0x4008b2
-\xb2\x08@\x00
-\xb2\x08@\x00\x00\x00\x00\x00
+(gdb) ! lilendian 0xdeadbeef
+\xef\xbe\xad\xde
+\xef\xbe\xad\xde\x00\x00\x00\x00
 ```
 
 ### Future:
